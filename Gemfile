@@ -17,6 +17,11 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
+  # next three are for twitter bootstrap support
+  gem "less-rails"
+  gem "therubyracer"
+  gem "twitter-bootstrap-rails"
+  
   gem 'uglifier', '>= 1.0.3'
 end
 
@@ -31,6 +36,18 @@ group :development do
 	# to rename a rails app started from this basic scaffold
 	# to rename, run rails g rename:app_to NewName 
 	gem 'rename'
+end
+
+group :test do 
+	gem "spork", '~> 0.9.0.rc'
+	gem 'webrat', '0.7.1'
+	gem 'watchr'
+	gem 'factory_girl_rails', '1.1.0'
+	gem "capybara"
+	gem "launchy"
+	gem "database_cleaner"
+	gem 'turn', :require => false
+	# gem 'spork', '0.8.4'
 end
 
 # To use ActiveModel has_secure_password

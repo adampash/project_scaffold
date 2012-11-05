@@ -26,6 +26,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'requirejs-rails'
+
 
 group :test, :development do
   gem "rspec-rails", "~> 2.0"

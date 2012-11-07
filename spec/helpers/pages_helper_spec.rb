@@ -11,5 +11,9 @@ require 'spec_helper'
 #   end
 # end
 describe PagesHelper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "string concat" do
+    it "concats two strings with spaces" do
+      ("this that").should == "this that"
+    end
+  end
 end

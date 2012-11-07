@@ -11,7 +11,7 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 
-// remove = from below to remove sprockets processing while using
+// I removed = from below to remove sprockets processing while using
 // require.js. keeping below for refernece, but it should not do anything.
 
 // require jquery

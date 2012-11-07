@@ -19,14 +19,14 @@ group :assets do
 
   # next three are for twitter bootstrap support
   gem "less-rails"
-  gem "therubyracer"
+  gem "therubyracer", :require => 'v8'
   gem "twitter-bootstrap-rails"
   
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-gem 'requirejs-rails'
+# gem 'jquery-rails'
+# gem 'requirejs-rails'
 
 
 group :test, :development do
@@ -40,16 +40,24 @@ group :development do
 	gem 'rename'
 end
 
-group :test do 
-	gem "spork", '~> 0.9.0.rc'
-	gem 'webrat', '0.7.1'
-	gem 'watchr'
-	gem 'factory_girl_rails', '1.1.0'
-	gem "capybara"
-	gem "launchy"
-	gem "database_cleaner"
-	gem 'turn', :require => false
-	# gem 'spork', '0.8.4'
+group :test, :development do 
+	# gem "spork", '~> 0.9.0.rc'
+	# gem 'webrat', '0.7.1'
+	# gem 'watchr'
+	# gem 'factory_girl_rails', '1.1.0'
+	# gem "capybara"
+	# gem "launchy"
+	# gem "database_cleaner"
+	# gem 'turn', :require => false
+
+	gem "rspec-rails", "~> 2.0"
+	gem 'capybara'
+	gem 'jasmine'
+	gem 'guard', '1.0.3'
+	gem 'guard-rspec' # bundle exec guard init rspec
+	gem 'guard-jasmine' # bundle exec guard init jasmine
+	gem 'jasminerice'
+	gem 'growl'
 end
 
 # To use ActiveModel has_secure_password

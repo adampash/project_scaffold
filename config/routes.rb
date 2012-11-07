@@ -1,4 +1,4 @@
-ProjectScaffold::Application.routes.draw do
+Projectscaffold::Application.routes.draw do
 
   root :to => 'pages#front'
 

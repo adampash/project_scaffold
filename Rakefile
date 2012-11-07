@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-ProjectScaffold::Application.load_tasks
+Projectscaffold::Application.load_tasks

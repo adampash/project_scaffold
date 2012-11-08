@@ -1,4 +1,5 @@
-#=require libs/require-2.1.1.min
+# need this at the top of each spec (I think?)
+#=require libs/require-jquery
 
   describe 'Foo', ['assets/config', 'assets/models/foo'], (config, Foo) ->
     it 'should be defined', ->

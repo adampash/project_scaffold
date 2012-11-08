@@ -1,7 +1,10 @@
 Projectscaffold::Application.routes.draw do
 
-  # root :to => 'pages#front'
-  match '(*everything)' => 'pages#front'
+  root :to => 'pages#front'
+
+  # when in production, should uncomment below, route everything that's single-page app-based
+  # to a single page and let sammy.js handle routing/state, pull in json data, etc.
+  # match '(*everything)' => 'pages#front'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

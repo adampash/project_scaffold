@@ -10,6 +10,7 @@ This repo is a skeleton for starting new projects using:
 * Modernizr
 * Jasmine for JS unit testing
 * Rspec for Rails testing
+* Etc.
 
 I made it because it generally takes much too long for me to spin up a new app with all the most common moving parts I like to use.
 

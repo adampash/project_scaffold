@@ -16,40 +16,48 @@ I made it because it generally takes much too long for me to spin up a new app w
 It probably doesn't make much sense for you, but it's great for me!
 
 ## To set it up:
-1. Clone it
+1. Clone it, get rid of .git folder, and re-init:
+
+  ```
+  git clone git://github.com/adampash/project_scaffold.git sample_project
+  cd sample_project
+  rm -rf .git
+  git init
+  ```
+
 2. Run 
 
-```
-bundle install
-```
+  ```
+  bundle install
+  ```
 
 3. Rename it with 
 
-```
-rails g rename:app_to NewName
-```
+  ```
+  rails g rename:app_to NewName
+  ```
 
 4. Set up new database names in database.yml
 5. To create new databases, run: 
 
-```
-rake db:create
-```
+  ```
+  rake db:create
+  ```
 
 6. To run specs with guard, run: 
 
-```
-guard
-```
+  ```
+  guard
+  ```
 
-When guard is running, you can access jasmine tests at:
+  When guard is running, you can access jasmine tests at:
 
-```
-http://localhost:8888/jasmine
-```
+  ```
+  http://localhost:8888/jasmine
+  ```
 
-OR if guard isn't running, you can access tests any time at:
+  OR if guard isn't running, you can access tests any time at:
 
-```
-http://[server]/jasmine
-```
+  ```
+  http://[server]/jasmine
+  ```

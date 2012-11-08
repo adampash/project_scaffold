@@ -10,6 +10,7 @@ This repo is a skeleton for starting new projects using:
 * Modernizr
 * Jasmine for JS unit testing
 * Rspec for Rails testing
+* Postgres (using Heroku's menu bar app)
 * Etc.
 
 I made it because it generally takes much too long for me to spin up a new app with all the most common moving parts I like to use.
@@ -32,11 +33,13 @@ It probably doesn't make much sense for you, but it's great for me!
   bundle install
   ```
 
-3. Rename it with 
+3. Rename it.
 
   ```
   rails g rename:app_to NewName
   ```
+  
+  (If using pow, restart with ```touch tmp/restart.txt```)
 
 4. Set up new database names in database.yml
 5. To create new databases, run: 

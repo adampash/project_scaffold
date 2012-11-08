@@ -1,7 +1,7 @@
 Projectscaffold::Application.routes.draw do
 
-  root :to => 'pages#front'
-
+  # root :to => 'pages#front'
+  match '(*everything)' => 'pages#front'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

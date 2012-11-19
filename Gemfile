@@ -61,6 +61,7 @@ group :test do
 	gem "spork", "> 0.9.0"
 	gem "guard-spork"
 	gem 'factory_girl_rails'
+	gem 'poltergeist'
 end
 
 # To use ActiveModel has_secure_password

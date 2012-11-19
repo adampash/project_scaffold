@@ -11,8 +11,8 @@ gem 'pg'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+	gem 'sass-rails',   '~> 3.2.3'
+	gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -38,15 +38,17 @@ group :development do
 end
 
 group :test, :development do 
-	# gem "spork", '~> 0.9.0.rc'
-	# gem 'webrat', '0.7.1'
-	# gem 'watchr'
-	# gem 'factory_girl_rails', '1.1.0'
-	# gem "capybara"
-	# gem "launchy"
-	# gem "database_cleaner"
-	# gem 'turn', :require => false
+	# gem "rspec-rails", "~> 2.0"
+	# gem 'capybara'
+	# gem 'jasmine'
+	# gem 'guard', '1.0.3'
+	# gem 'guard-rspec' # bundle exec guard init rspec
+	# gem 'guard-jasmine' # bundle exec guard init jasmine
+	# gem 'jasminerice'
+	# gem 'growl'
+end
 
+group :test do
 	gem "rspec-rails", "~> 2.0"
 	gem 'capybara'
 	gem 'jasmine'
@@ -55,6 +57,10 @@ group :test, :development do
 	gem 'guard-jasmine' # bundle exec guard init jasmine
 	gem 'jasminerice'
 	gem 'growl'
+
+	gem "spork", "> 0.9.0"
+	gem "guard-spork"
+	gem 'factory_girl_rails'
 end
 
 # To use ActiveModel has_secure_password

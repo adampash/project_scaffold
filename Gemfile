@@ -40,10 +40,11 @@ end
 group :test, :development do 
 	# gem "rspec-rails", "~> 2.0"
 	# gem 'capybara'
-	# gem 'jasmine'
+	gem 'jasmine'
 	# gem 'guard', '1.0.3'
 	# gem 'guard-rspec' # bundle exec guard init rspec
-	# gem 'guard-jasmine' # bundle exec guard init jasmine
+	gem 'guard-jasmine' # bundle exec guard init jasmine
+	gem 'jasminerice'
 	# gem 'jasminerice'
 	# gem 'growl'
 end
@@ -51,11 +52,9 @@ end
 group :test do
 	gem "rspec-rails", "~> 2.0"
 	gem 'capybara'
-	gem 'jasmine'
 	gem 'guard', '1.0.3'
 	gem 'guard-rspec' # bundle exec guard init rspec
-	gem 'guard-jasmine' # bundle exec guard init jasmine
-	gem 'jasminerice'
+	# gem 'guard-jasmine' # bundle exec guard init jasmine
 	gem 'growl'
 
 	gem "spork", "> 0.9.0"

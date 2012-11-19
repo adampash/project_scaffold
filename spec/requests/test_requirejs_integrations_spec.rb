@@ -7,5 +7,8 @@ describe "TestRequirejsIntegrations", :js => true do
 	  click_link "Try another"
 	  page.should have_content('secondary hot dog page')
 	  page.should have_content('eep')
+	  # poltergeist also allows you to execute javascript code, e.g.:
+	  page.execute_script("data = require('data'); data.foo.bar('third');")
+	  page.should have_content('third hot dog page')
 	end
 end

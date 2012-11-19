@@ -29,9 +29,6 @@ end
 # gem 'requirejs-rails'
 
 
-group :test, :development do
-  gem "rspec-rails", "~> 2.0"
-end
 
 group :development do
 	# see https://github.com/morshedalam/rename

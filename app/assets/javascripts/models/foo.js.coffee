@@ -9,7 +9,8 @@ define ['jquery', 'knockout'], ($, ko) ->
 			return 'goodbye cruel world ' + last
 		@bar = ko.observable('')
 		@other_url = ko.observable('')
-
+		@computed = ko.computed =>
+			@bar() + ' hot dog'
 		@change_page = (name, url) ->
 			@bar(name)
 			@other_url(url)
@@ -19,3 +20,4 @@ define ['jquery', 'knockout'], ($, ko) ->
 		bar:			@bar
 		change_page: 	@change_page
 		other_url:		@other_url
+		computed:		@computed
